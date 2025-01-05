@@ -1,0 +1,75 @@
+import React from "react";
+import {
+  useAddVideoToPlaylist,
+  useIsVideoInPlaylist,
+  useRemoveVideoFromPlaylist,
+} from "../../hooks/playlist.hook";
+import { useState } from "react";
+import { useSelector } from "react-redux";
+
+function PlaylistName({ playlistId, videoId, playlistName }) {
+  const { data: isAdded } = useIsVideoInPlaylist(videoId, playlistId);
+  const [added, setAdded] = useState(isAdded || false);
+  const theme = useSelector((state) => state.theme.theme);
+
+  const { mutateAsync: addVideoToPlaylist } = useAddVideoToPlaylist();
+  const { mutateAsync: removeVideoFromPlaylist } = useRemoveVideoFromPlaylist();
+
+  const handleAddVideoToPlaylist = async () => {
+    await addVideoToPlaylist({ videoId, playlistId });
+  };
+
+  const handleRemoveVideoFromPlaylist = async () => {
+    await removeVideoFromPlaylist({ videoId, playlistId });
+  };
+
+  return (
+    <li key={playlistId} className="mb-2 last:mb-0">
+      <label
+        className={`group/label inline-flex cursor-pointer items-center gap-x-3 ${
+          theme === "dark" ? "text-gray-200" : "text-gray-600"
+        }`}
+        htmlFor={`${playlistId}-checkbox`}
+      >
+        <input
+          type="checkbox"
+          className="peer hidden"
+          id={`${playlistId}-checkbox`}
+          defaultChecked={added}
+          onChange={(e) => {
+            if (e.target.checked) {
+              setAdded(true);
+              handleAddVideoToPlaylist();
+            } else {
+              setAdded(false);
+              handleRemoveVideoFromPlaylist();
+            }
+          }}
+        />
+        <span
+          className={`inline-flex h-4 w-4 items-center justify-center rounded-[4px] border border-transparent ${
+            theme === "dark" ? "bg-gray-700" : "bg-white"
+          } text-white group-hover/label:border-[#00bcd4] peer-checked:border-[#00bcd4] peer-checked:text-[#00bcd4]`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="3"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            ></path>
+          </svg>
+        </span>
+        {playlistName}
+      </label>
+    </li>
+  );
+}
+
+export default PlaylistName;
