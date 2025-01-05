@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of the application code
-COPY ./.env.docker .env
+# COPY ./.env.docker .env
 COPY . .
 
 # Build the Vite app for production

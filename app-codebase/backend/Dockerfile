@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of the application code to the container
-COPY .env.docker .env
+# COPY .env.docker .env
 COPY . .
 
 # Expose the port your backend runs on
