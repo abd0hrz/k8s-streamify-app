@@ -9,6 +9,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
     kubernetes.io/ingress.class: "nginx"
+    # nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   tls:
   - hosts:
@@ -25,6 +26,7 @@ spec:
         backend:
           service:
             name: frontend-service
+            namespace: production  # Reference the service in the production namespace
             port:
               number: 80
   - host: "wwapi.ahmadraza.in"
@@ -35,6 +37,7 @@ spec:
         backend:
           service:
             name: backend-service
+            namespace: production  # Reference the service in the production namespace
             port:
               number: 8000
   - host: "nginx.ahmadraza.in"
