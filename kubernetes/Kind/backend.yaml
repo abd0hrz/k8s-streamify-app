@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: noscopev6/watchwave-backend:${TAG}
+          image: noscopev6/watchwave-backend:v0.0.3
           ports:
             - containerPort: 8000
           envFrom:
