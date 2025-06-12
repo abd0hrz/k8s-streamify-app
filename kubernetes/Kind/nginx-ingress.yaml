@@ -66,3 +66,5 @@ spec:
             port:
               number: 8000
 
+# if using kind cluster label the nodes for ingress scheduling 
+# kubectl label nodes kind-worker ingress-ready=true
