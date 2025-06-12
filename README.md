@@ -1,7 +1,5 @@
 
-# WatchWave - NextGen VideoStreaming Platform
-
-Watch and share videos effortlessly with Shadow Play, a user-friendly webapp that brings a variety of content to your fingertips.
+# WatchWave - VideoStreaming Platform
 
 ## Screenshots 📸
 
