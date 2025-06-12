@@ -78,7 +78,7 @@ function EditChannelInfo() {
               </label>
               <div className="flex rounded-lg border">
                 <p className="flex shrink-0 items-center border-r border-white px-3 align-middle">
-                  watchwave.imhashir.me/
+                  watchwave.abd0hrz.me/
                 </p>
                 <input
                   type="text"
