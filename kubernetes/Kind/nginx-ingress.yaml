@@ -13,10 +13,10 @@ metadata:
 spec:
   tls:
   - hosts:
-      - "nginx.ahmadraza.in"
+      - "nginx.abd0hrz.in"
     secretName: tls-secret
   rules:
-  - host: "nginx.ahmadraza.in"
+  - host: "nginx.abd0hrz.in"
     http:
       paths:
       - pathType: Prefix
@@ -41,11 +41,11 @@ metadata:
 spec:
   tls:
   - hosts:
-      - "streamify.ahmadraza.in"
-      - "wwapi.ahmadraza.in"
+      - "streamify.abd0hrz.in"
+      - "wwapi.abd0hrz.in"
     secretName: tls-secret
   rules:
-  - host: "streamify.ahmadraza.in"
+  - host: "streamify.abd0hrz.in"
     http:
       paths:
       - pathType: Prefix
@@ -55,7 +55,7 @@ spec:
             name: frontend-service
             port:
               number: 80
-  - host: "wwapi.ahmadraza.in"
+  - host: "wwapi.abd0hrz.in"
     http:
       paths:
       - pathType: Prefix
@@ -66,5 +66,3 @@ spec:
             port:
               number: 8000
 
-# if using kind cluster label the nodes for ingress scheduling 
-# kubectl label nodes kind-worker ingress-ready=true
