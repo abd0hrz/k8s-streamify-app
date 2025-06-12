@@ -9,7 +9,7 @@
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   
-  "author": "mohdhashir",
+  "author": "abd0hrz",
   "license": "ISC",
   
   "devDependencies": {
