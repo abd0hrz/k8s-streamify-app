@@ -37,6 +37,7 @@ const ChannelAbout = () => {
     },
   ];
 
+  
   if (isFetching) return <ProgressBar />;
   return (
     <div className=" text-white p-6 rounded-lg shadow-lg max-w-md">
