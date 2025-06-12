@@ -13,7 +13,7 @@ const Support = () => {
 
   const personalInfo = {
     name: "Abd0",
-    email: "esport.py.m45@gmail.com",
+    email: "harizi.b.abdellah@gmail.com",
   };
 
   const links = [
