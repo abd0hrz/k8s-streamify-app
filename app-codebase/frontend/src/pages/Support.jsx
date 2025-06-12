@@ -12,7 +12,7 @@ const Support = () => {
   const theme = useSelector((state) => state.theme.theme); // Select the theme from Redux
 
   const personalInfo = {
-    name: "Mohd Hashir",
+    name: "Abd0",
     email: "esport.py.m45@gmail.com",
   };
 
