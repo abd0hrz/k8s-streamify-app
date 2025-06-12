@@ -10,10 +10,6 @@ Watch and share videos effortlessly with Shadow Play, a user-friendly webapp tha
 ![Screenshot 2024-12-06 203950](https://github.com/user-attachments/assets/83c701de-c045-48a1-8b3f-d7159486ce52)
 
 
-## Deployed Link 🌐
-
-The website is hosted at: 👉 [WatchWave](https://watchwave.imhashir.me/)
-
 ## Table of Contents
 
 - [Project Structure](#project-structure)
@@ -53,7 +49,6 @@ The website is hosted at: 👉 [WatchWave](https://watchwave.imhashir.me/)
 - mongoose
 
 
-
 ## Features ✨
 
 - User-friendly interface
@@ -70,13 +65,13 @@ To run the project locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/hashir-mohd/watchwave
+git clone https://github.com/abd0hrz/k8s-streamify-app
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd watchwave
+cd k8s-streamify-app
 ```
 
 3. Install the required Node modules in both frontend and backend directories:
@@ -116,22 +111,4 @@ localhost:5173
 4. **Manage Your Profile**
 
    Edit your profile details and manage your uploaded videos.
-
-## Contributing
-
-We welcome contributions to enhance Shadow Play! Please follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/your-feature-name`.
-3. Make your changes and commit them: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature/your-feature-name`.
-5. Submit a pull request.
-
-## Acknowledgments
-
-Thanks to the developers of ReactJS, Tailwind CSS, Node.js, Express, and MongoDB for their amazing tools.
-
-Atlast special Thanks to Hitesh Chaudhary for his wonderful tutorial on Youtube.
-
-
 
