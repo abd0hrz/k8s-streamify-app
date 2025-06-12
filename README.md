@@ -1,6 +1,10 @@
 
 # WatchWave - VideoStreaming Platform
 
+WatchWave is a full-stack Video Streaming Web Application built with the MERN stack (MongoDB, Express.js, React, Node.js), designed as a YouTube Clone. It provides a smooth and responsive user experience for uploading, watching, liking, and commenting on videos — all in real-time.
+
+This application is designed with scalability in mind and is fully containerized and deployed on Kubernetes, making it suitable for production-grade environments. It supports horizontal scaling, automated deployments, and integrates modern DevOps practices.
+
 ## Screenshots 📸
 
 ![Screenshot 2024-12-06 203733](https://github.com/user-attachments/assets/aa7d9228-eaf9-4281-a924-6e3988f9d21e)
