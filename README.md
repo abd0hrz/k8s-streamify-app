@@ -67,7 +67,7 @@ To run the project locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/abd0hrz/k8s-streamify-app
+git clone https://github.com/abd0hrz/k8s-streamify-app.git
 ```
 
 2. Navigate to the project directory:
