@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 const Support = () => {
-  const theme = useSelector((state) => state.theme.theme);
+  const theme = useSelector((state) => state.theme.theme);  // Select the theme from Redux
 
   const personalInfo = {
     name: "Abd0",
